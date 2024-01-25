@@ -1,0 +1,466 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins";
+  font-size: 1.6rem;
+}
+:root {
+  --primary-color: #0f1b4c;
+}
+/* common */
+.content {
+  max-width: calc(100% - 165px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5rem;
+}
+
+/*header*/
+.header {
+  background: #e6f0ff;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  margin-left: 50px;
+}
+.action {
+  margin-left: auto;
+}
+
+.navbar ul li a {
+  color: #4f5361;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 8px 14px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.navbar .action .action-link {
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  background: var(--primary-color);
+  min-width: 98px;
+  padding: 18px 16px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar .action .btn {
+  padding: 13px 16px;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+.header .hero .info {
+  margin-top: 130px;
+}
+
+.hero .sub-title {
+  color: #687690;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 8px 5px;
+  letter-spacing: 0.01em;
+}
+.hero .title {
+  margin: 8px 0px;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1.19;
+  color: #000336;
+}
+.hero .desc {
+  color: #5a6473;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  line-height: 32px;
+  margin-bottom: 2.5rem;
+}
+.hero .info {
+  width: 51%;
+}
+.hero-cta {
+  min-width: 170px;
+}
+.hero .image {
+  position: absolute;
+  right: calc((100vw - 1100px) / 2 - 60px);
+  bottom: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .row .desc {
+  color: #7d8589;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+.content .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo .slack .slack-name {
+  color: #c4c4c4;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.content .guide .title {
+  position: relative;
+  color: #000339;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.25; /* 100% */
+  padding: 5px;
+}
+.content .guide .title::before {
+  content: "";
+  position: absolute;
+  border-radius: 12px;
+  background: #000339;
+  width: 41px;
+  height: 4px;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.content .guide .desc {
+  color: #5a6473;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25; /* 187.5% */
+  text-wrap: wrap;
+  width: 459px;
+  max-width: 100%;
+  margin: auto;
+}
+.content .guide .how-to {
+  display: flex;
+  justify-content: space-between;
+  width: 585px;
+  margin: 70px auto 0px;
+  flex-flow: wrap;
+}
+.content .guide .how-to .fig {
+  text-align: center;
+  width: 33.3%;
+}
+.content .guide .how-to .fig .title-how {
+  color: #3b3c45;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 110% */
+  padding: 26px 0px 10px 0px;
+}
+.content .guide .how-to .fig a {
+  color: #0689ff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.guide {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.guide .btn a{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.feature .title{
+    color: #000339;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-top: 40px;
+}
+
+.feature{
+    background: #F5FAFE;
+    width: 100vw;
+    height: 727px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.sub-title-feature{
+    color: #5A6473;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.25; 
+}
+
+.feature .content .property a{
+    color: #0689FF;
+    text-align: right;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.feature .content .property{
+    position: absolute;
+    right:  100px;
+    top: 120px;
+}
+
+.product{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.product .figure{
+    background: #fff;
+    color: #4D4D52;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+    letter-spacing: 0.14px;
+    border-radius: 0px 0px 12px 12px;
+}
+.product .title{
+    color: #000339;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 17px 0px 11px 20px;
+}
+.product .content-fig{
+    color: #A3A6AB;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 17px 0px 11px 20px;
+}
+
+.product .figure .intro-prod{
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 20px 11px 20px;
+    align-items: start;
+}
+.product .figure .intro-prod div{
+    display: flex;
+    align-items: center;
+}
+.ads-content{
+    position: relative;
+    width: 51%;
+}
+.ads-content .prefix-ads{
+    position: absolute;
+    top: 7.5rem;
+    left: -5px;
+    width: 239px;
+    max-width: 500px;
+    height: 252px;
+    border-radius: 0px 0px 12px 12px;
+    background: #FFF;
+    box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+}
+
+.prefix-ads .title{
+    margin-top: 50px;
+    display: flex;
+    color: #000339;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding: 0px 22px;
+    justify-content: space-between;
+}
+.prefix-ads .desc{
+    color: #A7A7A7;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    padding: 8px 22px;
+}
+.person{
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 8px;
+}
+.person .group{
+    display: flex;
+    margin: 10px 14px 0px 13px;
+}
+.person .group img{
+    width: 16.337px;
+height: 16.337px;
+    border-radius: 16.337px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.10);
+}
+.feature2 .content .ads{
+    display: flex;
+    justify-content: space-around;
+}
+.main-content{
+    margin-top: 150px;
+    min-width: 250px;
+    width: 309px;
+}
+.main-content .title{
+    color: #000339;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px; /* 128.571% */
+}
+
+.main-content .sub-title{
+    margin-top: 20px;
+    color: #5A6473;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.analyze-data{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px ;
+}
+.analyze-data .fig .title{
+  color: #000;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px;
+}
+.analyze-data .fig .desc{
+  color: #7B8087;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.newsletter{
+  margin: auto;
+  margin-top: 130px;
+  width: 1110px;
+  height: 378px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #063183;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.newsletter .title{
+  color: #FFF;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.newsletter .sub-title{
+  color: #c3c3c3;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; 
+}
+
+.newsletter .df{
+  margin-left: 80px;
+}
+.df div{
+  margin:10px
+}
+.newsletter .dr{
+  position: absolute;
+  right: 222px;
+  top: -30px;
+}
+footer{
+  margin-top: 105px;
+}
+
+footer .over-view{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+footer .content ul .title{
+  margin-bottom: 40px;
+  color: #1C1C1D;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer .content ul li{
+  color: #7A7A7E;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+footer .content ul .sub-content{
+  color: #7A7A7E;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+.end{
+  margin: 81px 0px 58px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.end .copyright{
+  color: #C2C2C2;
+  font-size: 14px;
+  font-weight: 400;
+}
